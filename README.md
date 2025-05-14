@@ -1,6 +1,10 @@
 # Basketball Analysis(in progess)
 ![image](Screenshot1.png)
-![video](https://drive.google.com/file/d/1Ya6FuZkOqOlNBpQcEJi6GWkJBdfkrMYT/view?usp=drive_link)
+
+
+https://github.com/user-attachments/assets/74d8f7e4-925b-441f-bc8d-ed02c00fc224
+
+
 
 ## Overview
 - Detecting and Tracking in game basketball court
