@@ -1,0 +1,18 @@
+# player_tracker overall sequence
+# 1. 프레임 -> YOLO로 predict
+# 2. YOLO output -> supervision.Detections 변환
+# 3. supervision.ByteTrack 으로 tracking
+# 4. class_id == “Player” 인 객체만 추적결과에 포함
+# 5. 전체 프레임별 track 리스트를 반환
+
+# Libraries: YOLO vs supervision
+YOLO: obj detection(model)
+supervision: tracking, visualization, format conversion
+=> 객체 탐지 및 추적(multi-obj tracking(ByteTrack))
+* OpenCV: 기본적인 전처리, 영상 I/O 등에 활용, 간단한 single object tracker
+
+# ByteTrack(), update_with_detections()
+sv.ByteTrack(): multi-oject tracking algorithm
+update_with_detections(detections):
+매 프레임의 detection 결과를 tracker에 넘겨서
+ **추적 정보 (bbox, confidence, cls_id, track_id 등)**를 반환
