@@ -1,7 +1,4 @@
 # Basketball Analysis(in progess)
-![image](Screenshot1.png)
-
-
 https://github.com/user-attachments/assets/74d8f7e4-925b-441f-bc8d-ed02c00fc224
 
 
